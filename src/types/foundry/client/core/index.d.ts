@@ -3,6 +3,7 @@ import "./clipboard.d.ts";
 import "./document-index.d.ts";
 import "./game-time.d.ts";
 import "./hooks.d.ts";
+import "./image.d.ts";
 import "./packages.d.ts";
 import "./searchfilter.d.ts";
 import "./settings.d.ts";
