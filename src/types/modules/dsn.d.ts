@@ -11,6 +11,10 @@ declare global {
             messageID?: string | null,
             speaker?: foundry.documents.ChatSpeakerData | null
         ): Promise<boolean>;
+        
+        waitFor3DAnimationByMessageID(
+            targetMessageId: string
+        ): Promise<boolean>;
     }
 
     class DiseSoNiceModule extends Module {}

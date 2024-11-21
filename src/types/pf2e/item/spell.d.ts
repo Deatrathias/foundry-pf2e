@@ -139,7 +139,9 @@ declare global {
         data?: { castRank?: number };
     }
 
-    class SpellOverlayCollection extends Collection<SpellOverlay> {}
+    class SpellOverlayCollection extends Collection<SpellOverlay> {
+        get overrideVariants(): SpellPF2e[];
+    }
 
     class SpellPF2e<TParent extends ActorPF2e | null = ActorPF2e | null> extends ItemPF2e<TParent> {
         readonly parentItem: ConsumablePF2e<TParent> | null;
